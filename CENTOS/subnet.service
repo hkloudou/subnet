@@ -1,0 +1,12 @@
+[Unit] 
+Description=subnet 
+After=network.target 
+    
+[Service] 
+Type=simple
+ExecStart=/bin/sh /var/subnet/sh.sh
+ExecReload= 
+PrivateTmp=true 
+    
+[Install] 
+WantedBy=multi-user.target

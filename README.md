@@ -1,4 +1,6 @@
 
+###
+for from https://github.com/twitchyliquid64/subnet
 # subnet
 
 _VPN server/client for the rest of us._
@@ -20,7 +22,7 @@ Setup the server:
 ```shell
 
 export GOPATH=`pwd` #set your GOPATH where you want the build to happen
-go get -u github.com/twitchyliquid64/subnet
+go get -u github.com/hkloudou/subnet
 sysctl net.ipv4.ip_forward=1
 iptables -t nat -A POSTROUTING -j MASQUERADE
 ./bin/subnet --mode init-server-certs --cert server.certPEM --key server.keyPEM --ca ca.certPEM --ca_key ca.keyPEM
@@ -41,7 +43,7 @@ Now, run this on the client:
 
 ```shell
 export GOPATH=`pwd` #set your GOPATH where you want the build to happen
-go get -u github.com/twitchyliquid64/subnet
+go get -u github.com/hkloudou/subnet
 sudo ./bin/subnet -gw 192.168.69.1 -network 192.168.69.4/24 -cert client.certPEM -key client.keyPEM -ca ca.certPEM <server address>
 
 #If you are on Mac OSX (replace 'Wi-Fi' with your interface):
@@ -66,7 +68,7 @@ Setup the server (linux only):
 ```shell
 
 export GOPATH=`pwd` #set your GOPATH where you want the build to happen
-go get -u github.com/twitchyliquid64/subnet
+go get -u github.com/hkloudou/subnet
 sysctl net.ipv4.ip_forward=1
 iptables -t nat -A POSTROUTING -j MASQUERADE
 ./bin/subnet --mode init-server-certs --cert server.certPEM --key server.keyPEM --ca ca.certPEM --ca_key ca.keyPEM
@@ -87,7 +89,7 @@ Now, run this on the client:
 
 ```shell
 export GOPATH=`pwd` #set your GOPATH where you want the build to happen
-go get -u github.com/twitchyliquid64/subnet
+go get -u github.com/hkloudou/subnet
 sudo ./bin/subnet -network 192.168.69.4/24 -cert client.certPEM -key client.keyPEM -ca ca.certPEM <server address>
 ```
 

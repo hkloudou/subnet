@@ -15,3 +15,10 @@
 /ca.priv
 /localhost.certPEM
 /localhost.keyPEM
+
+/ca.*
+/server.*
+/client.*
+
+build/
+CENTOS/home/subnet

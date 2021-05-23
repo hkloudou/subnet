@@ -9,7 +9,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/twitchyliquid64/subnet/subnet/cert"
+	"github.com/hkloudou/subnet/subnet/cert"
 )
 
 // TLSConfig generates and returns a TLS configuration based on the given parameters.

@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/twitchyliquid64/subnet/subnet/conn"
+	"github.com/hkloudou/subnet/subnet/conn"
 
 	"github.com/songgao/water"
 )
@@ -63,7 +63,6 @@ func NewClient(servAddr, port, network, iName string, newGateway string,
 	if err != nil {
 		return nil, errors.New("invalid network address/mask - " + err.Error())
 	}
-
 	intf, err := water.NewTUN(iName)
 	if err != nil {
 		return nil, errors.New("Could not create TUN - " + err.Error())

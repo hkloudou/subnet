@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/twitchyliquid64/subnet/subnet/conn"
+	"github.com/hkloudou/subnet/subnet/conn"
 
 	"github.com/songgao/water"
 )

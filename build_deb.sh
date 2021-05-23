@@ -14,12 +14,12 @@ if [ -d "${BUILD_DIR}" ]; then
 fi
 
 
-mkdir -pv ${BUILD_DIR}/src/github.com/twitchyliquid64/subnet
-cp -rv DEBIAN/ subnet/ vendor/ *.go ${BUILD_DIR}/src/github.com/twitchyliquid64/subnet
+mkdir -pv ${BUILD_DIR}/src/github.com/hkloudou/subnet
+cp -rv DEBIAN/ subnet/ vendor/ *.go ${BUILD_DIR}/src/github.com/hkloudou/subnet
 export GOPATH="${BUILD_DIR}"
 
 mkdir -pv "${BUILD_DIR}/usr/bin"
-go build -v -o "${BUILD_DIR}/usr/bin/subnet" github.com/twitchyliquid64/subnet
+go build -v -o "${BUILD_DIR}/usr/bin/subnet" github.com/hkloudou/subnet
 rm -rf "${BUILD_DIR}/src"
 
 

@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/twitchyliquid64/subnet/subnet/conn"
+	"github.com/hkloudou/subnet/subnet/conn"
 )
 
 type serverConn struct {

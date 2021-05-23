@@ -10,8 +10,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/twitchyliquid64/subnet/subnet"
-	"github.com/twitchyliquid64/subnet/subnet/cert"
+	"github.com/hkloudou/subnet/subnet"
+	"github.com/hkloudou/subnet/subnet/cert"
 )
 
 func main() {
